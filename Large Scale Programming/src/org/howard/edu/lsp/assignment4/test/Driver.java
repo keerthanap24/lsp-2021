@@ -14,6 +14,7 @@ public class Driver {
 		s.add(4);
 		s.add(7);
 		s.add(1);
+		
 		IntegerSet a = new IntegerSet();
 		a.add(3);
 		a.add(4);
@@ -22,7 +23,6 @@ public class Driver {
 		System.out.println(s.intersect(a));
 		s.union(a);
 		System.out.println(s);
-		
 		
 		IntegerSet s2 = new IntegerSet();
 		s2.add(1);
@@ -34,7 +34,6 @@ public class Driver {
 		}catch(IntegerSetException e) {
 			e.printStackTrace();
 		}
-		
 		
 		IntegerSet s3 = new IntegerSet();
 		s3.add(5);
@@ -48,7 +47,7 @@ public class Driver {
 		b.add(1);
 		System.out.println(s3.equals(b));
 		
-		
+
 		IntegerSet s4 = new IntegerSet();
 		s4.add(10);
 		s4.add(7);
@@ -59,7 +58,7 @@ public class Driver {
 		s4.clear();
 		System.out.println(s4);
 		
-		
+
 		IntegerSet s5 = new IntegerSet();
 		s5.add(10);
 		s5.add(7);
@@ -68,7 +67,7 @@ public class Driver {
 		s5.add(20);
 		System.out.println(s5.contains(8));
 		
-		
+
 		IntegerSet s6 = new IntegerSet();
 		s6.add(11);
 		s6.add(42);
@@ -79,6 +78,7 @@ public class Driver {
 		}catch(IntegerSetException e) {
 			e.printStackTrace();
 		}
+
 		
 		IntegerSet s7 = new IntegerSet();
 		s7.add(10);
@@ -88,9 +88,11 @@ public class Driver {
 		s7.add(20);
 		System.out.println(s7.length());
 		
+
 		IntegerSet s8 = new IntegerSet();
 		System.out.println(s8.isEmpty());
 		
+
 		IntegerSet s9 = new IntegerSet();
 		s9.add(5);
 		s9.add(2);

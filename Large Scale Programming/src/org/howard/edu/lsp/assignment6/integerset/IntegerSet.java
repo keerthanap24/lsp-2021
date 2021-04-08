@@ -1,8 +1,9 @@
-package org.howard.edu.lsp.assignment4;
+package org.howard.edu.lsp.assignment6.integerset;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.List;
 
 /**
  * 
@@ -11,7 +12,7 @@ import java.util.HashSet;
  */
 public class IntegerSet  {
 	// Hint: probably best to use an array list.  You will need to do a little research
-	ArrayList<Integer> set = new ArrayList<Integer>();
+	private List<Integer> set = new ArrayList<Integer>();
 	
 
 	/**
@@ -34,8 +35,8 @@ public class IntegerSet  {
 	 * @return the set of the IntegerSet object
 	 */
 	public ArrayList<Integer> getSet() {
-		return this.set;
-	};
+		return (ArrayList<Integer>) this.set;
+	}
 
 	/**
 	 * 
@@ -132,15 +133,9 @@ public class IntegerSet  {
 	 * @param intSetb
 	 * @return
 	 */
-	public ArrayList<Integer> intersect(IntegerSet intSetb) {
-		ArrayList<Integer> list = new ArrayList<Integer>();
+	public void intersect(IntegerSet intSetb) {
 		ArrayList<Integer> b = intSetb.getSet();
-        for (int i : set) {
-            if(b.contains(i)) {
-                list.add(i);
-            }
-        }
-        return list;
+		set.retainAll(b);
 	}; 
 	
 	/**
@@ -171,4 +166,3 @@ public class IntegerSet  {
 		return set.toString();
 	};
 }
-
