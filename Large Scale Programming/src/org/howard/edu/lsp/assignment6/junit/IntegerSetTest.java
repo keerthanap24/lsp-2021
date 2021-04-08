@@ -12,6 +12,7 @@ import org.junit.jupiter.api.Test;
 class IntegerSetTest {
 
 	@Test
+	@DisplayName("Test for clear method")
 	void testClear() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -23,6 +24,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for length method")
 	void testLength() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -34,6 +36,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for equals method")
 	void testEqualsIntegerSet() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -52,6 +55,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for contains method")
 	void testContains() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -65,6 +69,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for largest method")
 	void testLargest() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -82,6 +87,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for smallest method")
 	void testSmallest() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -99,6 +105,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for add method")
 	void testAdd() {
 		IntegerSet test = new IntegerSet();
 		test.add(5);
@@ -119,6 +126,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for remove method")
 	void testRemove() {
 		IntegerSet test = new IntegerSet();
 		test.add(5);
@@ -135,6 +143,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for union method")
 	void testUnion() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -157,6 +166,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for intersect method")
 	void testIntersect() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -174,6 +184,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for diff method")
 	void testDiff() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
@@ -190,6 +201,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for isEmpty method")
 	void testIsEmpty() {
 		IntegerSet test = new IntegerSet();
 		Boolean value = test.isEmpty();
@@ -198,6 +210,7 @@ class IntegerSetTest {
 	}
 
 	@Test
+	@DisplayName("Test for toString method")
 	void testToString() {
 		IntegerSet test = new IntegerSet();
 		test.add(1);
