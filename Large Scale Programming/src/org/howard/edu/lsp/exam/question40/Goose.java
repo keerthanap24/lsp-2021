@@ -4,17 +4,26 @@ public class Goose extends Flying implements Animal {
 	public Goose() {	
 	}
 
-	@Override
+	/**
+	 * @Override speak method
+	 * @return new speak string for goose
+	 */
 	public String speak() {
 		return("This goose speaks.");
 	}
 	
-	@Override
+	/**
+	 * @Override move method
+	 * @return new move string for goose
+	 */
 	public String move() {
 		return("This goose moves forward.");
 	}
 	
-	@Override
+	/**
+	 * @Override fly method
+	 * @return new fly string for goose
+	 */
 	public String fly() {
 		return("This goose is flying South.");
 	}

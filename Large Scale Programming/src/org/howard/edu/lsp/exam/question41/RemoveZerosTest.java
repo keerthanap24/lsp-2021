@@ -5,11 +5,13 @@ import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class RemoveZerosTest {
 
 	@Test
+	@DisplayName("Test case for RemoveZeros")
 	void testRemoveZeros() {
 		ArrayList<Integer> test_list = new ArrayList<>(Arrays.asList(0, 7, 2, 0, 0, 4, 0));
 		ArrayList<Integer> new_list = new ArrayList<>(Arrays.asList(7, 2, 4));

@@ -4,11 +4,13 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.*;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class SongsDatabaseTest {
 
 	@Test
+	@DisplayName("Test case for addSong")
 	void testAddSong() {
 		SongsDatabase db = new SongsDatabase();
 		db.addSong("Rap", "Savage");
@@ -19,6 +21,7 @@ class SongsDatabaseTest {
 	}
 
 	@Test
+	@DisplayName("Test case for getSongs")
 	void testGetSongs() {
 		SongsDatabase db = new SongsDatabase();
 		db.addSong("Rap", "Savage");
@@ -32,6 +35,7 @@ class SongsDatabaseTest {
 	}
 
 	@Test
+	@DisplayName("Test case for getGenreOfSong")
 	void testGetGenreOfSong() {
 		SongsDatabase db = new SongsDatabase();
 		db.addSong("Rap", "Savage");

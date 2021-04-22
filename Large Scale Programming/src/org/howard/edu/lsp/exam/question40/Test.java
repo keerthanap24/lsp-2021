@@ -2,10 +2,13 @@ package org.howard.edu.lsp.exam.question40;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.DisplayName;
+
 
 class Test {
 
 	@org.junit.jupiter.api.Test
+	@DisplayName("Test case for speak")
 	void testSpeak() {
 		Animal goose_test = new Goose();
 		Animal tiger_test = new Tiger();
@@ -15,6 +18,7 @@ class Test {
 	}
 
 	@org.junit.jupiter.api.Test
+	@DisplayName("Test case for move")
 	void testMove() {
 		Animal goose_test = new Goose();
 		Animal tiger_test = new Tiger();
@@ -23,6 +27,7 @@ class Test {
 	}
 
 	@org.junit.jupiter.api.Test
+	@DisplayName("Test case for fly")
 	void testFly() {
 		Flying goose_test = new Goose();
 		Flying airplane_test = new Airplane();

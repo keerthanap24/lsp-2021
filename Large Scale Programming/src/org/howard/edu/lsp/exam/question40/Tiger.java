@@ -5,12 +5,18 @@ public class Tiger implements Animal {
 		
 	}
 
-	@Override
+	/**
+	 * @Override speak method
+	 * @return new speak string for tiger
+	 */
 	public String speak() {
 		return("This tiger speaks.");
 	}
 	
-	@Override
+	/**
+	 * @Override move method
+	 * @return new move string for tiger
+	 */
 	public String move() {
 		return("This tiger moves forward.");
 	}
